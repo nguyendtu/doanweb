@@ -1,0 +1,59 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;   
+}
+
+.clearfix {
+    
+}
+
+.list-control {
+    width: 100%;
+}
+.list-unstyled {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-inline > li {
+    float: left;
+}
+
+.phone {
+    width: 32.44444444%;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0 5px 5px;
+}
+
+.phone .header {
+    height: 180px;
+}
+
+.phone img,
+.phone .content,
+.phone .info,
+.phone .action {
+    float: left;
+    width: 50%;
+}
+
+.phone .content {
+    padding: 0 5px;
+}
+
+.phone .action {
+    text-align: right;
+    padding: 10px 10px 0;
+}
+

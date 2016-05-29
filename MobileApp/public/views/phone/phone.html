@@ -1,0 +1,21 @@
+﻿<ul class="list-unstyled list-inline list-control">
+    <li ng-repeat="phone in phones" class="phone">
+        <div class="header clearfix">
+            <img src="{{ phone.image }}" alt="{{ phone.name }}" style="height:100%" />
+            <div class="content">
+                <h4 class="caption">{{ phone.name }}</h4>
+                <p class="price">{{ phone.price }}</p>
+                <p class="description">{{ phone.description }}</p>
+            </div>
+        </div>
+        <div class="footer clearfix">
+            <div class="info">
+                <h4 class="caption">{{ phone.name }}</h4>
+                <p class="price">{{ phone.price }}</p>
+            </div>
+            <div class="action">
+                <button class="btn btn-primary-outline">Mua ngay</button>
+            </div>
+        </div>
+    </li>
+</ul>

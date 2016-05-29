@@ -76,9 +76,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="public\css\main.css" />
     <Content Include="public\index.html" />
     <Content Include="public\javascript\app.js" />
     <Content Include="public\javascript\controllers\HomeController.js" />
+    <Content Include="public\javascript\directives\products.js" />
     <Content Include="public\javascript\route.js" />
     <Content Include="public\views\about\index.html" />
     <Content Include="public\views\home\index.html" />
@@ -104,7 +106,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="public\css\" />
     <Folder Include="public\images\" />
   </ItemGroup>
   <PropertyGroup>

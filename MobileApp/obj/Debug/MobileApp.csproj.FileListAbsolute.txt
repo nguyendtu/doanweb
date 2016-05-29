@@ -25,3 +25,16 @@ C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\bin\System.Web.Http.WebHost.xml
 C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\obj\Debug\MobileApp.csprojResolveAssemblyReference.cache
 C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\obj\Debug\MobileApp.dll
 C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\obj\Debug\MobileApp.pdb
+E:\study\doanweb\MobileApp\bin\MobileApp.dll
+E:\study\doanweb\MobileApp\bin\MobileApp.pdb
+E:\study\doanweb\MobileApp\bin\Newtonsoft.Json.dll
+E:\study\doanweb\MobileApp\bin\System.Net.Http.Formatting.dll
+E:\study\doanweb\MobileApp\bin\System.Web.Http.dll
+E:\study\doanweb\MobileApp\bin\System.Web.Http.WebHost.dll
+E:\study\doanweb\MobileApp\bin\Newtonsoft.Json.xml
+E:\study\doanweb\MobileApp\bin\System.Net.Http.Formatting.xml
+E:\study\doanweb\MobileApp\bin\System.Web.Http.xml
+E:\study\doanweb\MobileApp\bin\System.Web.Http.WebHost.xml
+E:\study\doanweb\MobileApp\obj\Debug\MobileApp.csprojResolveAssemblyReference.cache
+E:\study\doanweb\MobileApp\obj\Debug\MobileApp.dll
+E:\study\doanweb\MobileApp\obj\Debug\MobileApp.pdb
