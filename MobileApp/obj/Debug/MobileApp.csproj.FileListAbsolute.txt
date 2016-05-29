@@ -1,0 +1,27 @@
+C:\Users\DUYTU\Documents\Visual Studio 2012\Projects\MobileApp\MobileApp\obj\Debug\MobileApp.csprojResolveAssemblyReference.cache
+C:\Users\DUYTU\Documents\Visual Studio 2012\Projects\MobileApp\MobileApp\bin\MobileApp.dll
+C:\Users\DUYTU\Documents\Visual Studio 2012\Projects\MobileApp\MobileApp\bin\MobileApp.pdb
+C:\Users\DUYTU\Documents\Visual Studio 2012\Projects\MobileApp\MobileApp\obj\Debug\MobileApp.dll
+C:\Users\DUYTU\Documents\Visual Studio 2012\Projects\MobileApp\MobileApp\obj\Debug\MobileApp.pdb
+C:\Users\DUYTU\Documents\Visual Studio 2012\Projects\MobileApp\MobileApp\bin\Newtonsoft.Json.dll
+C:\Users\DUYTU\Documents\Visual Studio 2012\Projects\MobileApp\MobileApp\bin\System.Net.Http.Formatting.dll
+C:\Users\DUYTU\Documents\Visual Studio 2012\Projects\MobileApp\MobileApp\bin\System.Web.Http.dll
+C:\Users\DUYTU\Documents\Visual Studio 2012\Projects\MobileApp\MobileApp\bin\System.Web.Http.WebHost.dll
+C:\Users\DUYTU\Documents\Visual Studio 2012\Projects\MobileApp\MobileApp\bin\Newtonsoft.Json.xml
+C:\Users\DUYTU\Documents\Visual Studio 2012\Projects\MobileApp\MobileApp\bin\System.Net.Http.Formatting.xml
+C:\Users\DUYTU\Documents\Visual Studio 2012\Projects\MobileApp\MobileApp\bin\System.Web.Http.xml
+C:\Users\DUYTU\Documents\Visual Studio 2012\Projects\MobileApp\MobileApp\bin\System.Web.Http.WebHost.xml
+C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\bin\MobileApp.dll.config
+C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\bin\MobileApp.dll
+C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\bin\MobileApp.pdb
+C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\bin\Newtonsoft.Json.dll
+C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\bin\System.Net.Http.Formatting.dll
+C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\bin\System.Web.Http.dll
+C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\bin\System.Web.Http.WebHost.dll
+C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\bin\Newtonsoft.Json.xml
+C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\bin\System.Net.Http.Formatting.xml
+C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\bin\System.Web.Http.xml
+C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\bin\System.Web.Http.WebHost.xml
+C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\obj\Debug\MobileApp.csprojResolveAssemblyReference.cache
+C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\obj\Debug\MobileApp.dll
+C:\Users\H.Nhung\Desktop\MobileApp\MobileApp\obj\Debug\MobileApp.pdb
