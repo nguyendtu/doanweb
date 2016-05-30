@@ -4,14 +4,14 @@
             <img src="{{ phone.image }}" alt="{{ phone.name }}" style="height:100%" />
             <div class="content">
                 <h4 class="caption">{{ phone.name }}</h4>
-                <p class="price">{{ phone.price }}</p>
+                <p class="price">{{ phone.price | currency }}</p>
                 <p class="description">{{ phone.description }}</p>
             </div>
         </div>
         <div class="footer clearfix">
             <div class="info">
                 <h4 class="caption">{{ phone.name }}</h4>
-                <p class="price">{{ phone.price }}</p>
+                <p class="price">{{ phone.price | currency }}</p>
             </div>
             <div class="action">
                 <button class="btn btn-primary-outline">Mua ngay</button>

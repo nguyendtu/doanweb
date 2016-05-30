@@ -38,3 +38,6 @@ E:\study\doanweb\MobileApp\bin\System.Web.Http.WebHost.xml
 E:\study\doanweb\MobileApp\obj\Debug\MobileApp.csprojResolveAssemblyReference.cache
 E:\study\doanweb\MobileApp\obj\Debug\MobileApp.dll
 E:\study\doanweb\MobileApp\obj\Debug\MobileApp.pdb
+E:\study\doanweb\MobileApp\bin\System.Web.Cors.dll
+E:\study\doanweb\MobileApp\bin\System.Web.Http.Cors.dll
+E:\study\doanweb\MobileApp\bin\System.Web.Http.Cors.xml

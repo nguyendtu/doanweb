@@ -21,9 +21,14 @@ namespace MobileApp.app
         // GET api/<controller>/5
         [Route("{id:int}")]
         [HttpGet]
-        public string Get(int id)
+        public Test Get(int id)
         {
-            return "value";
+
+            Test t = new Test();
+            t.Id = 1;
+            t.Name = "Nguyen Duy Tu";
+
+            return t;
         }
 
         // POST api/<controller>

@@ -1,6 +1,6 @@
 ﻿mobileApp.config(function ($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('home');
 
     $stateProvider
 
@@ -30,6 +30,16 @@
         .state('register', {
             url: '/register',
             templateUrl: 'public/views/account/register.html'
+        })
+
+        .state('admin', {
+            url: '/admin',
+            templateUrl: 'public/admin.html'
         });
+
+        //.state('admin', {
+        //    url: '/admin',
+        //    templateUrl: 'public/views/admin/index.html'
+        //});
 
 });

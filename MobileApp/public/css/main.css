@@ -57,3 +57,12 @@
     padding: 10px 10px 0;
 }
 
+.btn-primary-outline {
+    background-color: transparent;
+    border: 1px solid #2ba29d;
+    color: #2ba29d;
+}
+.btn-primary-outline:hover {
+    background-color: #2ba29d;
+    color: #fff;
+}
