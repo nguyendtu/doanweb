@@ -4,3 +4,661 @@
     <phone id="phone-best-ordering" phones="phones"></phone>-->
 </div>
 
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <a href="">
+                <img src="E:\Demo\UIWEB2\Image\logo.png">
+            </a>
+        </div>
+        <div class="navigation">
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="phone.html">Phone type</a></li>
+                <li><a href="manufacturers.html">Manufacturers</a></li>
+            </ul>
+            <div class="login">
+                <button class="btn">
+                    <a href="login.html"><strong>Login</strong></a>
+                </button>
+                <button class="btn">
+                    <a href="register.html">Register</a>
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <!-- =======================================
+    -->
+    <!--        menu phone              -->
+    <div id="phone-menu" data-show="false">
+        <div class="arrowup"></div>
+        <div class="phone-item">
+            <div class="phone-caption">
+                <h4>Popular phones</h4>
+            </div>
+            <ul class="phone-info">
+                <li><a>Nokia 225</a></li>
+                <li><a>Nokia 110</a></li>
+                <li><a>Samsung B313E</a></li>
+                <li><a>Samsung Yucca B360</a></li>
+            </ul>
+        </div>
+        <div class="phone-item">
+            <div class="phone-caption">
+                <h4>Phone intermediate</h4>
+            </div>
+            <ul class="phone-info">
+                <li><a>Samsung Galaxy J5</a></li>
+                <li><a>Lumia 850</a></li>
+                <li><a>LG G5</a></li>
+                <li><a>Samsung Galaxy A5 2016</a></li>
+            </ul>
+        </div>
+        <div class="phone-item">
+            <div class="phone-caption">
+                <h4>Luxury phone</h4>
+            </div>
+            <ul class="phone-info">
+                <li><a>Nokia C1</a></li>
+                <li><a>LG G2</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--==============================================
+    -->
+    <!--           menu manufacturers               -->
+    <div id="phone-menu-th" data-show="false">
+        <div class="arrowup-th"></div>
+        <div class="phone-item-th">
+            <ul class="phone-info">
+                <li><a href="">Nokia</a></li>
+                <li><a href="">Samsung</a></li>
+                <li><a href="">LG</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- ============= the end container==================
+ -->
+<div id="search">
+    <form action="" method="get">
+        <div class="form-group">
+            <label for="key" class="src-only">Key word</label>
+            <input type="text" id="key" name="keyWord" placeholder="Press your key word!">
+        </div>
+        <button class="btn btn-search">Search</button>
+    </form>
+</div>
+<div class="s">
+    <div class="slider" onmouseover="slide.stopSlide();" onmouseout="slide.startSlide();">
+        <ul class="slides">
+            <li class="slide" data-index='1'>
+                <img src="E:\Demo\UIWEB2\Image\slide1.jpg" alt="anh 1">
+            </li>
+            <li class="slide" data-index='2'>
+                <img src="E:\Demo\UIWEB2\Image\slide2.jpg" alt="anh 2">
+            </li>
+            <!--
+            -->
+            <li class="slide" data-index='3'>
+                <img src="E:\Demo\UIWEB2\Image\slide3.jpg" alt="anh 3">
+            </li>
+            <li class="slide" data-index='4'>
+                <img src="E:\Demo\UIWEB2\Image\slide3.jpg" alt="anh 3">
+            </li>
+            <li class="slide" data-index='1'>
+                <img src="E:\Demo\UIWEB2\Image\slide1.jpg" alt="anh 4">
+            </li>
+        </ul>
+        <div id="control" class="direction" onclick="slide.controls()">
+            <img src="E:\Demo\UIWEB2\Image\left-direction.png" alt="left direction" class="left-direction">
+            <img src="E:\Demo\UIWEB2\Image\right-direction.png" alt="right direction" class="right-direction">
+        </div>
+    </div>
+</div>
+<div class="content">
+    <form class="filter-form">
+        <div class="filter">
+            <ul>
+                <h4><strong>Manufacturers</strong></h4>
+                <li>
+                    <input type="checkbox" name="checkbox" id="checkbox" value="f/6/VietTien" />Nokia
+                </li>
+                <li>
+                    <input type="checkbox" name="checkbox2" id="checkbox2" value="f/6/VietTay" />Samsung
+                </li>
+                <li>
+                    <input type="checkbox" name="checkbox3" id="checkbox3" value="f/6/Apion" />LG
+                </li>
+            </ul>
+        </div>
+        <!-- ====================================================================
+        -->
+        <div class="filter">
+            <ul>
+                <h4><strong>Giá</strong></h4>
+                <li>
+                    <input type="checkbox" name="checkbox10" id="checkbox10" value="f/6/Nokia" />Dưới 5.000.000đ
+                </li>
+                <li>
+                    <input type="checkbox" name="checkbox12" id="checkbox12" value="f/6/Nokia" />Từ 5.000.000 - 15.000.000đ
+                </li>
+                <li>
+                    <input type="checkbox" name="checkbox13" id="checkbox13" value="f/6/Samsung" />Từ 15.000.000 - 55.000.000đ
+                </li>
+                <li>
+                    <input type="checkbox" name="checkbox11" id="checkbox11" value="f/6/LG" />Trên 55.000.000đ
+                </li>
+            </ul>
+        </div>
+        <!-- ===========================================================
+        -->
+        <div class="filter">
+            <ul>
+                <h4><strong>Phone color </strong></h4>
+                <li>
+                    <input type="checkbox" name="checkbox24" id="checkbox24" value="f/6/Nokia" />Trắng
+                </li>
+                <li>
+                    <input type="checkbox" name="checkbox25" id="checkbox25" value="f/6/Samsung" />Đen
+                </li>
+                <li>
+                    <input type="checkbox" name="checkbox26" id="checkbox26" value="f/6/LG" />Đỏ
+                </li>
+                <li>
+                    <input type="checkbox" name="checkbox27" id="checkbox27" value="f/6/Nokia" /> Xanh
+                </li>
+            </ul>
+        </div>
+    </form>
+    <!--========================================Latest phones===============================================================-->
+    <div class="main-content">
+        <div class="products">
+            <div class="new-products">
+                <div class="caption">
+                    <h3>Latest phones</h3>
+                </div>
+                <div class="info-products">
+                    <ul class="items">
+                        <li class="item">
+                            <div class="item-image">
+                                <img src="">
+                            </div>
+                            <div class="item-name">
+                                <a></a>
+                            </div>
+                            <div class="pagination">
+                                <p></p>
+                                <button class="btn">
+                                    <a href="">detail</a>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item-image">
+                                <img src="">
+                            </div>
+                            <div class="item-name">
+                                <a></a>
+                            </div>
+                            <div class="pagination">
+                                <p></p>
+                                <button class="btn">
+                                    <a href="">detail</a>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item-image">
+                                <img src="">
+                            </div>
+                            <div class="item-name">
+                                <a></a>
+                            </div>
+                            <div class="pagination">
+                                <p></p>
+                                <button class="btn">
+                                    <a href="">detail</a>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item-image">
+                                <img src="">
+                            </div>
+                            <div class="item-name">
+                                <a></a>
+                            </div>
+                            <div class="pagination">
+                                <p></p>
+                                <button class="btn">
+                                    <a href="">detail</a>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item-image">
+                                <img src="">
+                            </div>
+                            <div class="item-name">
+                                <a></a>
+                            </div>
+                            <div class="pagination">
+                                <p></p>
+                                <button class="btn">
+                                    <a href="">detail</a>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item-image">
+                                <img src="">
+                            </div>
+                            <div class="item-name">
+                                <a></a>
+                            </div>
+                            <div class="pagination">
+                                <p></p>
+                                <button class="btn">
+                                    <a href="">detail</a>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item-image">
+                                <img src="">
+                            </div>
+                            <div class="item-name">
+                                <a></a>
+                            </div>
+                            <div class="pagination">
+                                <p></p>
+                                <button class="btn">
+                                    <a href="">detail</a>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item-image">
+                                <img src="">
+                            </div>
+                            <div class="item-name">
+                                <a></a>
+                            </div>
+                            <div class="pagination">
+                                <p></p>
+                                <button class="btn">
+                                    <a href="">detail</a>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item-image">
+                                <img src="">
+                            </div>
+                            <div class="item-name">
+                                <a></a>
+                            </div>
+                            <div class="pagination">
+                                <p></p>
+                                <button class="btn">
+                                    <a href="">detail</a>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item-image">
+                                <img src="">
+                            </div>
+                            <div class="item-name">
+                                <a></a>
+                            </div>
+                            <div class="pagination">
+                                <p></p>
+                                <button class="btn">
+                                    <a href="">detail</a>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="control" class="direction" onclick="slide.controls()">
+                        <img src="E:\Demo\UIWEB2\Image\left-direction.png" alt="left direction" class="left-direction">
+                        <img src="E:\Demo\UIWEB2\Image\right-direction.png" alt="right direction" class="right-direction">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--=========================================end====================================-->
+        <!--========================================best selling phone===============================================================-->
+        <div class="main-content">
+            <div class="products">
+                <div class="new-products">
+                    <div class="caption">
+                        <h3>Best selling phone</h3>
+                    </div>
+                    <div class="info-products">
+                        <ul class="items">
+                            <li class="item">
+                                <div class="item-image">
+                                    <img src="">
+                                </div>
+                                <div class="item-name">
+                                    <a></a>
+                                </div>
+                                <div class="pagination">
+                                    <p></p>
+                                    <button class="btn">
+                                        <a href="">detail</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item-image">
+                                    <img src="">
+                                </div>
+                                <div class="item-name">
+                                    <a></a>
+                                </div>
+                                <div class="pagination">
+                                    <p></p>
+                                    <button class="btn">
+                                        <a href="">detail</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item-image">
+                                    <img src="">
+                                </div>
+                                <div class="item-name">
+                                    <a></a>
+                                </div>
+                                <div class="pagination">
+                                    <p></p>
+                                    <button class="btn">
+                                        <a href="">detail</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item-image">
+                                    <img src="">
+                                </div>
+                                <div class="item-name">
+                                    <a></a>
+                                </div>
+                                <div class="pagination">
+                                    <p></p>
+                                    <button class="btn">
+                                        <a href="">detail</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item-image">
+                                    <img src="">
+                                </div>
+                                <div class="item-name">
+                                    <a></a>
+                                </div>
+                                <div class="pagination">
+                                    <p></p>
+                                    <button class="btn">
+                                        <a href="">detail</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item-image">
+                                    <img src="">
+                                </div>
+                                <div class="item-name">
+                                    <a></a>
+                                </div>
+                                <div class="pagination">
+                                    <p></p>
+                                    <button class="btn">
+                                        <a href="">detail</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item-image">
+                                    <img src="">
+                                </div>
+                                <div class="item-name">
+                                    <a></a>
+                                </div>
+                                <div class="pagination">
+                                    <p></p>
+                                    <button class="btn">
+                                        <a href="">detail</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item-image">
+                                    <img src="">
+                                </div>
+                                <div class="item-name">
+                                    <a></a>
+                                </div>
+                                <div class="pagination">
+                                    <p></p>
+                                    <button class="btn">
+                                        <a href="">detail</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item-image">
+                                    <img src="">
+                                </div>
+                                <div class="item-name">
+                                    <a></a>
+                                </div>
+                                <div class="pagination">
+                                    <p></p>
+                                    <button class="btn">
+                                        <a href="">detail</a>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="item-image">
+                                    <img src="">
+                                </div>
+                                <div class="item-name">
+                                    <a></a>
+                                </div>
+                                <div class="pagination">
+                                    <p></p>
+                                    <button class="btn">
+                                        <a href="">detail</a>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="control" class="direction" onclick="slide.controls()">
+                            <img src="E:\Demo\UIWEB2\Image\left-direction.png" alt="left direction" class="left-direction">
+                            <img src="E:\Demo\UIWEB2\Image\right-direction.png" alt="right direction" class="right-direction">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=============================================================end=============================================-->
+            <!--========================================phone orders at most===============================================================-->
+            <div class="main-content">
+                <div class="products">
+                    <div class="new-products">
+                        <div class="caption">
+                            <h3>Phone orders at most</h3>
+                        </div>
+                        <div class="info-products">
+                            <ul class="items">
+                                <li class="item">
+                                    <div class="item-image">
+                                        <img src="">
+                                    </div>
+                                    <div class="item-name">
+                                        <a></a>
+                                    </div>
+                                    <div class="pagination">
+                                        <p></p>
+                                        <button class="btn">
+                                            <a href="">detail</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-image">
+                                        <img src="">
+                                    </div>
+                                    <div class="item-name">
+                                        <a></a>
+                                    </div>
+                                    <div class="pagination">
+                                        <p></p>
+                                        <button class="btn">
+                                            <a href="">detail</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-image">
+                                        <img src="">
+                                    </div>
+                                    <div class="item-name">
+                                        <a></a>
+                                    </div>
+                                    <div class="pagination">
+                                        <p></p>
+                                        <button class="btn">
+                                            <a href="">detail</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-image">
+                                        <img src="">
+                                    </div>
+                                    <div class="item-name">
+                                        <a></a>
+                                    </div>
+                                    <div class="pagination">
+                                        <p></p>
+                                        <button class="btn">
+                                            <a href="">detail</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-image">
+                                        <img src="">
+                                    </div>
+                                    <div class="item-name">
+                                        <a></a>
+                                    </div>
+                                    <div class="pagination">
+                                        <p></p>
+                                        <button class="btn">
+                                            <a href="">detail</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-image">
+                                        <img src="">
+                                    </div>
+                                    <div class="item-name">
+                                        <a></a>
+                                    </div>
+                                    <div class="pagination">
+                                        <p></p>
+                                        <button class="btn">
+                                            <a href="">detail</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-image">
+                                        <img src="">
+                                    </div>
+                                    <div class="item-name">
+                                        <a></a>
+                                    </div>
+                                    <div class="pagination">
+                                        <p></p>
+                                        <button class="btn">
+                                            <a href="">detail</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-image">
+                                        <img src="">
+                                    </div>
+                                    <div class="item-name">
+                                        <a></a>
+                                    </div>
+                                    <div class="pagination">
+                                        <p></p>
+                                        <button class="btn">
+                                            <a href="">detail</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-image">
+                                        <img src="">
+                                    </div>
+                                    <div class="item-name">
+                                        <a></a>
+                                    </div>
+                                    <div class="pagination">
+                                        <p></p>
+                                        <button class="btn">
+                                            <a href="">detail</a>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-image">
+                                        <img src="">
+                                    </div>
+                                    <div class="item-name">
+                                        <a></a>
+                                    </div>
+                                    <div class="pagination">
+                                        <p></p>
+                                        <button class="btn">
+                                            <a href="">detail</a>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div id="control" class="direction" onclick="slide.controls()">
+                                <img src="E:\Demo\UIWEB2\Image\left-direction.png" alt="left direction" class="left-direction">
+                                <img src="E:\Demo\UIWEB2\Image\right-direction.png" alt="right direction" class="right-direction">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--=========================================================================end=======================================================-->
+                <div class="footer-container">
+                    <div class="footer-top">
+                        <section id="footer-top">
+                            <div class="footer-main">
+                                <div class="row" style="margin-top:10px;">
+                                    <span style="border-bottom:1px solid #CCC; margin-bottom:20px;margin-left:30px; display:inline-block;">&copy;2016 N2PT.com All rights reserved <a href="">phone</a>.</span>
+                                    <p>Chủ quản: 1364121 - 1364104. <br> MST cá nhân: 0934129895<br>Số ĐKKD: 40N20080306 do UBND quận A tp-HCM cấp ngày 30/05/2016.</p>
+                                </div>
+                                <div class="logo-DK">
+                                    <img src="dk.png" width="150">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <script type="text/javascript" src="slide-update.js"></script>
