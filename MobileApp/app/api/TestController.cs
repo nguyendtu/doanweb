@@ -26,7 +26,7 @@ namespace MobileApp.app
 
             Test t = new Test();
             t.Id = 1;
-            t.Name = "Nguyen Duy Tu";
+            t.Name = "Nguyen Duy Tu + Vo Hong Nhung";
 
             return t;
         }

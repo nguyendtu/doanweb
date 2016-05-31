@@ -1,5 +1,11 @@
 ﻿mobileApp.directive("phone", function () {
 
+    var controller = function ($scope, $state) {
+        $scope.detail = function () {
+            $state.go('details');
+        };
+    };
+
     var link = function() {
         $scope.phones = phone;
 
@@ -14,6 +20,7 @@
         scope: {
             phones: '='
         },
-        link: 'link'
+        link: 'link',
+        controller: controller
     };
 });

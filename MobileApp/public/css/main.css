@@ -66,3 +66,19 @@
     background-color: #2ba29d;
     color: #fff;
 }
+.nav-right{
+    float: right;
+}
+.navbar{
+    border-radius: 0;
+}
+.footer{
+    border: 1px solid #1c1c1c;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 15px;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
