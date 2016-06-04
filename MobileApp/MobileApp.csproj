@@ -88,10 +88,11 @@
     <Content Include="public\index.html" />
     <Content Include="public\javascript\app.js" />
     <Content Include="public\javascript\controllers\HomeController.js" />
+    <Content Include="public\javascript\controllers\PhoneManageController.js" />
     <Content Include="public\javascript\directives\products.js" />
     <Content Include="public\javascript\route.js" />
     <Content Include="public\javascript\services\ProductService.js" />
-    <Content Include="public\search.html" />
+    <Content Include="public\javascript\search.html" />
     <Content Include="public\views\about\index.html" />
     <Content Include="public\views\admin\account.html" />
     <Content Include="public\views\admin\index.html" />

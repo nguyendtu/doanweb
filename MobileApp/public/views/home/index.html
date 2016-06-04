@@ -1,642 +1,160 @@
-﻿<div>
-    <phone id="phone-lasted" class="clearfix" phones="test"></phone>
-    <!--<phone id="phone-best-selling" phones="phones"></phone>
-    <phone id="phone-best-ordering" phones="phones"></phone>-->
-</div>
-
-<div class="container">
- 
-    <!-- =======================================
-    -->
-    <!--        menu phone              -->
-    <div id="phone-menu" data-show="false">
-        <div class="arrowup"></div>
-        <div class="phone-item">
-            <div class="phone-caption">
-                <h4>Popular phones</h4>
-            </div>
-            <ul class="phone-info">
-                <li><a>Nokia 225</a></li>
-                <li><a>Nokia 110</a></li>
-                <li><a>Samsung B313E</a></li>
-                <li><a>Samsung Yucca B360</a></li>
-            </ul>
-        </div>
-        <div class="phone-item">
-            <div class="phone-caption">
-                <h4>Phone intermediate</h4>
-            </div>
-            <ul class="phone-info">
-                <li><a>Samsung Galaxy J5</a></li>
-                <li><a>Lumia 850</a></li>
-                <li><a>LG G5</a></li>
-                <li><a>Samsung Galaxy A5 2016</a></li>
-            </ul>
-        </div>
-        <div class="phone-item">
-            <div class="phone-caption">
-                <h4>Luxury phone</h4>
-            </div>
-            <ul class="phone-info">
-                <li><a>Nokia C1</a></li>
-                <li><a>LG G2</a></li>
-            </ul>
-        </div>
-    </div>
-    <!--==============================================
-    -->
-    <!--           menu manufacturers               -->
-    <div id="phone-menu-th" data-show="false">
-        <div class="arrowup-th"></div>
-        <div class="phone-item-th">
-            <ul class="phone-info">
-                <li><a href="">Nokia</a></li>
-                <li><a href="">Samsung</a></li>
-                <li><a href="">LG</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- ============= the end container==================
- -->
-<div id="search">
-    <form action="" method="get">
-        <div class="form-group">
-            <label for="key" class="src-only">Key word</label>
-            <input type="text" id="key" name="keyWord" placeholder="Press your key word!">
-        </div>
-        <button class="btn btn-search">Search</button>
-    </form>
-</div>
-<div class="s">
-    <div class="slider" onmouseover="slide.stopSlide();" onmouseout="slide.startSlide();">
-        <ul class="slides">
-            <li class="slide" data-index='1'>
-                <img src="E:\Demo\UIWEB2\Image\slide1.jpg" alt="anh 1">
-            </li>
-            <li class="slide" data-index='2'>
-                <img src="E:\Demo\UIWEB2\Image\slide2.jpg" alt="anh 2">
-            </li>
-            <!--
-            -->
-            <li class="slide" data-index='3'>
-                <img src="E:\Demo\UIWEB2\Image\slide3.jpg" alt="anh 3">
-            </li>
-            <li class="slide" data-index='4'>
-                <img src="E:\Demo\UIWEB2\Image\slide3.jpg" alt="anh 3">
-            </li>
-            <li class="slide" data-index='1'>
-                <img src="E:\Demo\UIWEB2\Image\slide1.jpg" alt="anh 4">
-            </li>
-        </ul>
-        <div id="control" class="direction" onclick="slide.controls()">
-            <img src="E:\Demo\UIWEB2\Image\left-direction.png" alt="left direction" class="left-direction">
-            <img src="E:\Demo\UIWEB2\Image\right-direction.png" alt="right direction" class="right-direction">
-        </div>
-    </div>
-</div>
-<div class="content">
-    <form class="filter-form">
-        <div class="filter">
-            <ul>
-                <h4><strong>Manufacturers</strong></h4>
-                <li>
-                    <input type="checkbox" name="checkbox" id="checkbox" value="f/6/VietTien" />Nokia
-                </li>
-                <li>
-                    <input type="checkbox" name="checkbox2" id="checkbox2" value="f/6/VietTay" />Samsung
-                </li>
-                <li>
-                    <input type="checkbox" name="checkbox3" id="checkbox3" value="f/6/Apion" />LG
-                </li>
-            </ul>
-        </div>
-        <!-- ====================================================================
-        -->
-        <div class="filter">
-            <ul>
-                <h4><strong>Giá</strong></h4>
-                <li>
-                    <input type="checkbox" name="checkbox10" id="checkbox10" value="f/6/Nokia" />Dưới 5.000.000đ
-                </li>
-                <li>
-                    <input type="checkbox" name="checkbox12" id="checkbox12" value="f/6/Nokia" />Từ 5.000.000 - 15.000.000đ
-                </li>
-                <li>
-                    <input type="checkbox" name="checkbox13" id="checkbox13" value="f/6/Samsung" />Từ 15.000.000 - 55.000.000đ
-                </li>
-                <li>
-                    <input type="checkbox" name="checkbox11" id="checkbox11" value="f/6/LG" />Trên 55.000.000đ
-                </li>
-            </ul>
-        </div>
-        <!-- ===========================================================
-        -->
-        <div class="filter">
-            <ul>
-                <h4><strong>Phone color </strong></h4>
-                <li>
-                    <input type="checkbox" name="checkbox24" id="checkbox24" value="f/6/Nokia" />Trắng
-                </li>
-                <li>
-                    <input type="checkbox" name="checkbox25" id="checkbox25" value="f/6/Samsung" />Đen
-                </li>
-                <li>
-                    <input type="checkbox" name="checkbox26" id="checkbox26" value="f/6/LG" />Đỏ
-                </li>
-                <li>
-                    <input type="checkbox" name="checkbox27" id="checkbox27" value="f/6/Nokia" /> Xanh
-                </li>
-            </ul>
-        </div>
-    </form>
-    <!--========================================Latest phones===============================================================-->
-    <div class="main-content">
-        <div class="products">
-            <div class="new-products">
-                <div class="caption">
-                    <h3>Latest phones</h3>
-                </div>
-                <div class="info-products">
-                    <ul class="items">
-                        <li class="item">
-                            <div class="item-image">
-                                <img src="">
-                            </div>
-                            <div class="item-name">
-                                <a></a>
-                            </div>
-                            <div class="pagination">
-                                <p></p>
-                                <button class="btn">
-                                    <a href="">detail</a>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="item-image">
-                                <img src="">
-                            </div>
-                            <div class="item-name">
-                                <a></a>
-                            </div>
-                            <div class="pagination">
-                                <p></p>
-                                <button class="btn">
-                                    <a href="">detail</a>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="item-image">
-                                <img src="">
-                            </div>
-                            <div class="item-name">
-                                <a></a>
-                            </div>
-                            <div class="pagination">
-                                <p></p>
-                                <button class="btn">
-                                    <a href="">detail</a>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="item-image">
-                                <img src="">
-                            </div>
-                            <div class="item-name">
-                                <a></a>
-                            </div>
-                            <div class="pagination">
-                                <p></p>
-                                <button class="btn">
-                                    <a href="">detail</a>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="item-image">
-                                <img src="">
-                            </div>
-                            <div class="item-name">
-                                <a></a>
-                            </div>
-                            <div class="pagination">
-                                <p></p>
-                                <button class="btn">
-                                    <a href="">detail</a>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="item-image">
-                                <img src="">
-                            </div>
-                            <div class="item-name">
-                                <a></a>
-                            </div>
-                            <div class="pagination">
-                                <p></p>
-                                <button class="btn">
-                                    <a href="">detail</a>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="item-image">
-                                <img src="">
-                            </div>
-                            <div class="item-name">
-                                <a></a>
-                            </div>
-                            <div class="pagination">
-                                <p></p>
-                                <button class="btn">
-                                    <a href="">detail</a>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="item-image">
-                                <img src="">
-                            </div>
-                            <div class="item-name">
-                                <a></a>
-                            </div>
-                            <div class="pagination">
-                                <p></p>
-                                <button class="btn">
-                                    <a href="">detail</a>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="item-image">
-                                <img src="">
-                            </div>
-                            <div class="item-name">
-                                <a></a>
-                            </div>
-                            <div class="pagination">
-                                <p></p>
-                                <button class="btn">
-                                    <a href="">detail</a>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="item-image">
-                                <img src="">
-                            </div>
-                            <div class="item-name">
-                                <a></a>
-                            </div>
-                            <div class="pagination">
-                                <p></p>
-                                <button class="btn">
-                                    <a href="">detail</a>
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
-                    <div id="control" class="direction" onclick="slide.controls()">
-                        <img src="E:\Demo\UIWEB2\Image\left-direction.png" alt="left direction" class="left-direction">
-                        <img src="E:\Demo\UIWEB2\Image\right-direction.png" alt="right direction" class="right-direction">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--=========================================end====================================-->
-        <!--========================================best selling phone===============================================================-->
-        <div class="main-content">
-            <div class="products">
-                <div class="new-products">
-                    <div class="caption">
-                        <h3>Best selling phone</h3>
-                    </div>
-                    <div class="info-products">
-                        <ul class="items">
-                            <li class="item">
-                                <div class="item-image">
-                                    <img src="">
-                                </div>
-                                <div class="item-name">
-                                    <a></a>
-                                </div>
-                                <div class="pagination">
-                                    <p></p>
-                                    <button class="btn">
-                                        <a href="">detail</a>
-                                    </button>
-                                </div>
-                            </li>
-                            <li class="item">
-                                <div class="item-image">
-                                    <img src="">
-                                </div>
-                                <div class="item-name">
-                                    <a></a>
-                                </div>
-                                <div class="pagination">
-                                    <p></p>
-                                    <button class="btn">
-                                        <a href="">detail</a>
-                                    </button>
-                                </div>
-                            </li>
-                            <li class="item">
-                                <div class="item-image">
-                                    <img src="">
-                                </div>
-                                <div class="item-name">
-                                    <a></a>
-                                </div>
-                                <div class="pagination">
-                                    <p></p>
-                                    <button class="btn">
-                                        <a href="">detail</a>
-                                    </button>
-                                </div>
-                            </li>
-                            <li class="item">
-                                <div class="item-image">
-                                    <img src="">
-                                </div>
-                                <div class="item-name">
-                                    <a></a>
-                                </div>
-                                <div class="pagination">
-                                    <p></p>
-                                    <button class="btn">
-                                        <a href="">detail</a>
-                                    </button>
-                                </div>
-                            </li>
-                            <li class="item">
-                                <div class="item-image">
-                                    <img src="">
-                                </div>
-                                <div class="item-name">
-                                    <a></a>
-                                </div>
-                                <div class="pagination">
-                                    <p></p>
-                                    <button class="btn">
-                                        <a href="">detail</a>
-                                    </button>
-                                </div>
-                            </li>
-                            <li class="item">
-                                <div class="item-image">
-                                    <img src="">
-                                </div>
-                                <div class="item-name">
-                                    <a></a>
-                                </div>
-                                <div class="pagination">
-                                    <p></p>
-                                    <button class="btn">
-                                        <a href="">detail</a>
-                                    </button>
-                                </div>
-                            </li>
-                            <li class="item">
-                                <div class="item-image">
-                                    <img src="">
-                                </div>
-                                <div class="item-name">
-                                    <a></a>
-                                </div>
-                                <div class="pagination">
-                                    <p></p>
-                                    <button class="btn">
-                                        <a href="">detail</a>
-                                    </button>
-                                </div>
-                            </li>
-                            <li class="item">
-                                <div class="item-image">
-                                    <img src="">
-                                </div>
-                                <div class="item-name">
-                                    <a></a>
-                                </div>
-                                <div class="pagination">
-                                    <p></p>
-                                    <button class="btn">
-                                        <a href="">detail</a>
-                                    </button>
-                                </div>
-                            </li>
-                            <li class="item">
-                                <div class="item-image">
-                                    <img src="">
-                                </div>
-                                <div class="item-name">
-                                    <a></a>
-                                </div>
-                                <div class="pagination">
-                                    <p></p>
-                                    <button class="btn">
-                                        <a href="">detail</a>
-                                    </button>
-                                </div>
-                            </li>
-                            <li class="item">
-                                <div class="item-image">
-                                    <img src="">
-                                </div>
-                                <div class="item-name">
-                                    <a></a>
-                                </div>
-                                <div class="pagination">
-                                    <p></p>
-                                    <button class="btn">
-                                        <a href="">detail</a>
-                                    </button>
-                                </div>
-                            </li>
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="Home.css" type="text/css">
+</head>
+<body>
+    <!--=============================================Menu======================================================-->
+    <div class="container">
+        <div class="wrapper">
+            <div class="main_menu">
+                <ul>
+                    <li>
+                        <a href="">Popular phones</a>
+                        <ul>
+                            <li><a>Nokia 225</a></li>
+                            <li><a>Nokia 110</a></li>
+                            <li><a>Samsung B313E</a></li>
+                            <li><a>Samsung Yucca B360</a></li>
                         </ul>
-                        <div id="control" class="direction" onclick="slide.controls()">
-                            <img src="E:\Demo\UIWEB2\Image\left-direction.png" alt="left direction" class="left-direction">
-                            <img src="E:\Demo\UIWEB2\Image\right-direction.png" alt="right direction" class="right-direction">
+                    </li>
+                    <li>
+                        <a href="">Intermediate phone</a>
+                        <ul>
+                            <li><a>Samsung Galaxy J5</a></li>
+                            <li><a>Lumia 850</a></li>
+                            <li><a>LG G5</a></li>
+                            <li><a>Samsung Galaxy A5 2016</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Senior phone</a>
+                        <ul>
+                            <li><a>Nokia C1</a></li>
+                            <li><a>LG G2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Producer</a>
+                        <ul>
+                            <li><a href="">Nokia</a></li>
+                            <li><a href="">Samsung</a></li>
+                            <li><a href="">LG</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div>
+            <!--===============================================End Menu=====================================================-->
+            <!--===============================================Search=======================================================-->
+            <div id="tfheader">
+                <form id="tfnewsearch" method="get" action="http://www.google.com">
+                    <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+                </form>
+                <div class="tfclear"></div>
+            </div>
+        </div>
+        <!--==============================================End Search====================================================-->
+        <!--===============================================SideBar=======================================================-->
+        <aside id="sidebar">
+            <div class="section">
+                <h3 class="mHead mHeadTwoLine">Advanced search</h3>
+            </div>
+            <!--==========================================search by phone name============================================-->
+            <div class="sectionInner">
+                <h4 class="sHead">phone name</h4>
+                <ul class="lNav">
+                    <li><a href="">Nokia 225</a></li>
+                    <li><a href="">Nokia 110</a></li>
+                    <li><a href="">Samsung B313E</a></li>
+                    <li><a href="">Samsung Yucca B360</a></li>
+                    <li><a href="">Samsung Galaxy J5</a></li>
+                    <li><a href="">Lumia 850</a></li>
+                    <li><a href="">LG G5</a></li>
+                    <li><a href="">Samsung Galaxy A5 2016</a></li>
+                    <li><a href="">Nokia C1</a></li>
+                    <li><a href="">LG G2</a></li>
+                </ul>
+            </div>
+            <!--=====================================end search bu phone name=====================================================-->
+            <!--=====================================search by Producer==============================================================-->
+            <div class="sectionInner">
+                <h4 class="sHead">Producer</h4>
+                <ul class="lNav">
+                    <li><a href="">Nokia</a></li>
+                    <li><a href="">Samsung</a></li>
+                    <li><a href="">LG</a></li>
+                </ul>
+            </div>
+            <!--======================================end search by Producer=====================================-->
+            <!--=======================================search by Pricce===============================================-->
+            <div class="sectionInner">
+                <h4 class="sHead">Price</h4>
+                <ul class="lNav">
+                    <li><a href="">$22.28 - $89.13</a></li>
+                    <li><a href="">$89.13 - $222.81</a></li>
+                    <li><a href="">$222.81 - $668.44 </a></li>
+                    <li><a href="">Over $668.44</a></li>
+                </ul>
+            </div>
+            <!--========================================end search by Price=============================================-->
+            <!--========================================advertising=====================================================-->
+            <div class="widget-container">
+                <div class="textwidget">
+                    <div class="container2">
+                        <div class="ribbon-sidebar-container">
+                            <div class="ribbon-header"></div>
+                            <div class="ribbon-wrapper">
+                                <div class="glow">&nbsp;</div>
+                                <div class="ribbon-front">N2PT High Quality</div>
+                                <div class="ribbon-edge-topleft"></div>
+                                <div class="ribbon-edge-topright"></div>
+                                <div class="ribbon-edge-bottomleft"></div>
+                                <div class="ribbon-edge-bottomright"></div>
+                            </div>
+                            <div class="ribbon-description">By N2PTdesigner Team</div>
+                            <div class="ribbon-download fa fa-shopping-cart">
+                                <a href="http://dichvu.izdesigner.com/dich-vu-hosting-vps-server-tai-izdesigner" target="_blank"> Register</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--=============================================================end=============================================-->
-            <!--========================================phone orders at most===============================================================-->
-            <div class="main-content">
-                <div class="products">
-                    <div class="new-products">
-                        <div class="caption">
-                            <h3>Phone orders at most</h3>
+            <!--========================================end advertising===================================================-->
+        </aside>
+
+        <!--=======================================end sidebar===================================================-->
+        <!--=========================================================================end=======================================================-->
+        <div class="footer-container">
+            <div class="footer-top">
+                <section id="footer-top">
+                    <div class="footer-main">
+                        <div class="row" style="margin-top:10px;">
+                            <span style="border-bottom:1px solid #CCC; margin-bottom:20px;margin-left:30px; display:inline-block;">©2016 N2PT.com All rights reserved <a href="">phone</a>.</span>
+                            <p>Chủ quản: 1364121 - 1364104. <br> MST cá nhân: 0934129895<br>Số ĐKKD: 40N20080306 do UBND quận A tp-HCM cấp ngày 30/05/2016.</p>
                         </div>
-                        <div class="info-products">
-                            <ul class="items">
-                                <li class="item">
-                                    <div class="item-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="item-name">
-                                        <a></a>
-                                    </div>
-                                    <div class="pagination">
-                                        <p></p>
-                                        <button class="btn">
-                                            <a href="">detail</a>
-                                        </button>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="item-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="item-name">
-                                        <a></a>
-                                    </div>
-                                    <div class="pagination">
-                                        <p></p>
-                                        <button class="btn">
-                                            <a href="">detail</a>
-                                        </button>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="item-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="item-name">
-                                        <a></a>
-                                    </div>
-                                    <div class="pagination">
-                                        <p></p>
-                                        <button class="btn">
-                                            <a href="">detail</a>
-                                        </button>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="item-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="item-name">
-                                        <a></a>
-                                    </div>
-                                    <div class="pagination">
-                                        <p></p>
-                                        <button class="btn">
-                                            <a href="">detail</a>
-                                        </button>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="item-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="item-name">
-                                        <a></a>
-                                    </div>
-                                    <div class="pagination">
-                                        <p></p>
-                                        <button class="btn">
-                                            <a href="">detail</a>
-                                        </button>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="item-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="item-name">
-                                        <a></a>
-                                    </div>
-                                    <div class="pagination">
-                                        <p></p>
-                                        <button class="btn">
-                                            <a href="">detail</a>
-                                        </button>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="item-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="item-name">
-                                        <a></a>
-                                    </div>
-                                    <div class="pagination">
-                                        <p></p>
-                                        <button class="btn">
-                                            <a href="">detail</a>
-                                        </button>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="item-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="item-name">
-                                        <a></a>
-                                    </div>
-                                    <div class="pagination">
-                                        <p></p>
-                                        <button class="btn">
-                                            <a href="">detail</a>
-                                        </button>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="item-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="item-name">
-                                        <a></a>
-                                    </div>
-                                    <div class="pagination">
-                                        <p></p>
-                                        <button class="btn">
-                                            <a href="">detail</a>
-                                        </button>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <div class="item-image">
-                                        <img src="">
-                                    </div>
-                                    <div class="item-name">
-                                        <a></a>
-                                    </div>
-                                    <div class="pagination">
-                                        <p></p>
-                                        <button class="btn">
-                                            <a href="">detail</a>
-                                        </button>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div id="control" class="direction" onclick="slide.controls()">
-                                <img src="E:\Demo\UIWEB2\Image\left-direction.png" alt="left direction" class="left-direction">
-                                <img src="E:\Demo\UIWEB2\Image\right-direction.png" alt="right direction" class="right-direction">
-                            </div>
+                        <div class="logo-DK">
+                            <img src="dk.png" width="150">
                         </div>
                     </div>
-                </div>
-                <!--=========================================================================end=======================================================-->
-                <div class="footer-container">
-                    <div class="footer-top">
-                        <section id="footer-top">
-                            <div class="footer-main">
-                                <div class="row" style="margin-top:10px;">
-                                    <span style="border-bottom:1px solid #CCC; margin-bottom:20px;margin-left:30px; display:inline-block;">&copy;2016 N2PT.com All rights reserved <a href="">phone</a>.</span>
-                                    <p>Chủ quản: 1364121 - 1364104. <br> MST cá nhân: 0934129895<br>Số ĐKKD: 40N20080306 do UBND quận A tp-HCM cấp ngày 30/05/2016.</p>
-                                </div>
-                                <div class="logo-DK">
-                                    <img src="dk.png" width="150">
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                <script type="text/javascript" src="slide-update.js"></script>
+                </section>
+            </div>
+        </div>
+        <script type="text/javascript" src="slide-update.js"></script>
+
+
+
+
+        <div>
+            <phone id="phone-lasted" class="clearfix" phones="test"></phone>
+            <!--<phone id="phone-best-selling" phones="phones"></phone>
+            <phone id="phone-best-ordering" phones="phones"></phone>-->
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

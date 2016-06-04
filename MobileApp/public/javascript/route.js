@@ -12,8 +12,13 @@
         })
 
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
-        .state('phone', {
-            url: '/phone',
+        //.state('phone', {
+        //    url: '/phone',
+        //    templateUrl: '/public/views/phone/index.html'
+        //})
+
+        .state('popular', {
+            url: '/popular/:type',
             templateUrl: '/public/views/phone/index.html'
         })
 
@@ -45,7 +50,8 @@
 
         .state('admin.phone', {
             url: '/phone',
-            templateUrl: '/public/views/admin/phone.html'
+            templateUrl: '/public/views/phone/index.html',
+            controller: 'PhoneManageController'
         })
 
         .state('admin.phone-type', {
