@@ -198,8 +198,8 @@ a{
     display: none; 
     position: absolute; 
     background: #00A69B;
-    top: 41px;
     width: 198px; 
+    top: 25px;
     left: 0px;
 }
 .main_menu>ul>li:hover ul{ 
@@ -216,8 +216,13 @@ a{
 
 }
 .main_menu>ul>li>ul>li{
-     border-bottom: 1px dotted #ACACAC;
+    border-bottom: 1px dotted #ACACAC;
+    margin-left: -40px;
 
+}
+.main_menu>ul>li>ul>li>a{
+    text-align: center;
+    margin-left: 4px;
 }
 /*==============================================Search================================================*/
 #tfheader{
@@ -284,7 +289,6 @@ a{
     font-size: 170%;
 }
 #globalFooter {
-    background: url(/common/images/bg_footer.gif) repeat-x 0 0;
     clear: both;
     margin-top: 30px;
 }
@@ -312,19 +316,8 @@ ul, menu, dir {
     border: 1px solid #E4E4E4;
 }
 /*========================================advertising=======================================*/
-.ribbon-front {
-    font-size: 20px;
-    line-height: 50px;
-    background-color: #c33;
-    height: 50px;
-    width: calc(100% + 20px);
-    position: relative;
-    left: -10px;
-    color: #f8f8f8;
-    text-align: center;
-    text-shadow: 0 1px 2px #c66;
-}
-.ribbon-sidebar-container {
-    height: 220px;
-    background: linear-gradient(to bottom,rgb(91, 196, 189) 0%,rgb(0, 166, 155) 100%);
+
+.advertising > ul > li >img{
+    float: right;
+    width: 242px;
 }
