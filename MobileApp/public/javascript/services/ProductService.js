@@ -42,6 +42,16 @@
         })
     };
 
+    // get phone type
+    var getPhonesOfType = function (type) {
+        var url = base + '/' + type;
+
+        return $http({
+            method: 'GET',
+            url: url
+        });
+    };
+
     // save new phone.
     var addNewPhone = function (data) {
         return $http({
@@ -59,6 +69,7 @@
         getLastedPhone: getLastedPhone,
         getBestSellingPhone: getBestSellingPhone,
         getBestOrderingPhone: getBestOrderingPhone,
-        addNewPhone: addNewPhone
+        addNewPhone: addNewPhone,
+        getPhonesOfType: getPhonesOfType
     };
 }]);

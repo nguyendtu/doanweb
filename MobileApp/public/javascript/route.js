@@ -17,14 +17,16 @@
         //    templateUrl: '/public/views/phone/index.html'
         //})
 
-        .state('popular', {
-            url: '/popular/:type',
-            templateUrl: '/public/views/phone/index.html'
+        .state('phone', {
+            url: '/phone/:type',
+            templateUrl: '/public/views/phone/index.html',
+            controller: 'PhoneController'
         })
 
         .state('producer', {
-            url: '/producer',
-            templateUrl: '/public/views/producer/index.html'
+            url: '/producer/:name',
+            templateUrl: '/public/views/producer/index.html',
+            controller: 'ProducerController'
         })
 
         .state('details', {
@@ -45,12 +47,16 @@
 
         .state('admin', {
             url: '/admin',
-            templateUrl: '/public/views/admin/index.html'
+            templateUrl: '/public/views/admin/index.html',
+            controller: 'AdminController',
+            onEnter: function () {
+                alert('a');
+            }
         })
 
         .state('admin.phone', {
             url: '/phone',
-            templateUrl: '/public/views/phone/index.html',
+            templateUrl: '/public/views/phone/admin.html',
             controller: 'PhoneManageController'
         })
 
@@ -61,7 +67,7 @@
 
         .state('admin.producer', {
             url: '/producer',
-            templateUrl: '/public/views/admin/producer.html'
+            templateUrl: '/public/views/producer/admin.html'
         })
 
         .state('admin.account', {

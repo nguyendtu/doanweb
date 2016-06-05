@@ -1,4 +1,4 @@
-﻿mobileApp.controller('PhoneManageController', ['$scope', 'phoneService', function ($scope, phoneServicephoneService) {
+﻿mobileApp.controller('PhoneManageController', ['$scope', 'phoneService', function ($scope, phoneService) {
     $scope.phone = {
         name: 'new phone',
         price: 12345,

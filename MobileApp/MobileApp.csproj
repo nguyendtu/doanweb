@@ -87,10 +87,14 @@
     <Content Include="public\css\main.css" />
     <Content Include="public\index.html" />
     <Content Include="public\javascript\app.js" />
+    <Content Include="public\javascript\controllers\AdminController.js" />
     <Content Include="public\javascript\controllers\HomeController.js" />
+    <Content Include="public\javascript\controllers\PhoneController.js" />
     <Content Include="public\javascript\controllers\PhoneManageController.js" />
+    <Content Include="public\javascript\controllers\ProducerController.js" />
     <Content Include="public\javascript\directives\products.js" />
     <Content Include="public\javascript\route.js" />
+    <Content Include="public\javascript\services\ProducerService.js" />
     <Content Include="public\javascript\services\ProductService.js" />
     <Content Include="public\javascript\search.html" />
     <Content Include="public\views\about\index.html" />
@@ -101,6 +105,8 @@
     <Content Include="public\views\admin\phone.html" />
     <Content Include="public\views\admin\producer.html" />
     <Content Include="public\views\home\index.html" />
+    <Content Include="public\views\phone\admin.html" />
+    <Content Include="public\views\producer\admin.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
