@@ -86,6 +86,7 @@
     <Content Include="public\css\admin.css" />
     <Content Include="public\css\main.css" />
     <Content Include="public\index.html" />
+    <Content Include="public\javascript\admin.js" />
     <Content Include="public\javascript\app.js" />
     <Content Include="public\javascript\controllers\AdminController.js" />
     <Content Include="public\javascript\controllers\HomeController.js" />
