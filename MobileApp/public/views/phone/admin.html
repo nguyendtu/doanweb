@@ -1,1 +1,38 @@
 ﻿<p>phone admin</p>
+<div>
+    <button>Add New Phone</button>
+    <div>
+        <form>
+            <input type="text" name="name" placeholder="Phone name" />
+            <button>Search</button>
+        </form>
+    </div>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Phone Name</th>
+            <th>Description</th>
+            <th>Made</th>
+            <th>Manufacturers</th>
+            <th>Price</th>
+            <th>Quatity</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="phone in phones">
+            <td>{{ phone.name }}</td>
+            <td>{{ phone.description }}</td>
+            <td>{{ phone.made }}</td>
+            <td>{{ phone.manufacturers }}</td>
+            <td>{{ phone.price }}</td>
+            <td>{{ phone.quatity }}</td>
+            <td>
+                <img width="30" src="/public/images/eye.png" alt="Alternate Text" />
+                <img width="30" src="/public/images/pencil.png" alt="Alternate Text" />
+                <img width="30" src="/public/images/trash.png" alt="Alternate Text" />
+            </td>
+        </tr>
+    </tbody>
+</table>

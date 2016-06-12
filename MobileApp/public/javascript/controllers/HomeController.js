@@ -2,10 +2,10 @@
 
     $scope.$broadcast("$stateChangeStart");
 
-    phoneService.getLastedPhone().success(function (res) {
-        $scope.test = res;
-        console.log($scope.test);
-    });
+    //phoneService.getLastedPhone().success(function (res) {
+    //    $scope.test = res;
+    //    console.log($scope.test);
+    //});
 
     //$http({
     //    method: 'GET',

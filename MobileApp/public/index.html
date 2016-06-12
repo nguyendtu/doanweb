@@ -3,7 +3,7 @@
     <head>
         <title>Mobile App</title>
 
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+       <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
         <link href="/public/css/main.css" rel="stylesheet" />
 
         <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
@@ -15,52 +15,123 @@
         <script src="/public/javascript/controllers/ProducerController.js"></script>
         <script src="/public/javascript/directives/products.js"></script>
         <script src="/public/javascript/services/ProductService.js"></script>
+        <script src="/public/javascript/services/ProducerService.js"></script>
     </head>
     <body>
-        <!-- NAVIGATION -->
-        <nav class="navbar navbar-inverse" role="navigation">
-            <div class="navbar-header">
-                <a class="navbar-brand" ui-sref="#">Logo</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li><a ui-sref="home">Home</a></li>
-                <li class="dropdown">
-                    <a >Phone <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a ui-sref="phone({ type: 'popular'})">Popular</a></li>
-                        <li><a ui-sref="phone({ type: 'intermediate'})">Intermediate</a></li>
-                        <li><a ui-sref="phone({ type: 'senior' })">Senior</a></li>
+            <!-- NAVIGATION -->
+            <!--=============================================Menu======================================================-->
+            <div class="wrapper">
+                <nav class="main_menu">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a ui-sref="home">Home</a>
+                        </li>
+                        <li>
+                            <a>Phone</a>
+                            <ul class="list-unstyled">
+                                <li><a ui-sref="phone({ type: 'popular'})">Popular</a></li>
+                                <li><a ui-sref="phone({ type: 'intermediate'})">Intermediate </a></li>
+                                <li><a ui-sref="phone({ type: 'senior'})">Senior</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Producer</a>
+                            <ul class="list-unstyled">
+                                <li><a ui-sref="producer({ name: 'nokia'})">Nokia</a></li>
+                                <li><a ui-sref="producer({ name: 'samsung'})">Samsung</a></li>
+                                <li><aui-sref ="producer({ name: 'lg'})">LG</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-                <li class="dropdown">
-                    <a>Producer <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a ui-sref="producer({ name: 'samsung' })">Samsung</a></li>
-                        <li><a ui-sref="producer({ name: 'Apple' })">Apple</a></li>
+                    <ul class="move-right list-unstyled">
+                        <li>
+                            <a ui-sref="register">Register</a>
+                        </li>
+                        <li>
+                            <a ui-sref="login">Login</a>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav nav-right" >
-                <li><a ui-sref="register">Register</a></li>
-                <li><a ui-sref="login">Login</a></li>
-                <!--<li><a ui-sref="about">About</a></li>-->
-            </ul>
-        </nav>
-
-        <!-- MAIN CONTENT -->
-        <div class="container">
-
-            <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
-            <div ui-view></div>
-
-        </div>
-        <div class="footer">
-            <div class="container">
-                <p>©2016 N2PT.com All rights reserved phone</p>
-                <p>MST cá nhân: 0934129895</p>
-                <p>Số ĐKKD: 40N20080306 do UBND quận A tp-HCM cấp ngày 30/05/2016.</p>
-                <img src="#" alt="logo-register" />
+                    <div class="clear"></div>
+                </nav>
             </div>
-        </div>
-    </body>
+            <!--===============================================End Menu=====================================================-->
+            <!-- MAIN CONTENT -->
+            <div class="wrapper">
+                <div class="content">
+                    <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+                    <div ui-view></div>
+                </div>
+                <div id="sidebar">
+                    <!--===============================================SideBar=======================================================-->
+                    <div class="section">
+                        <h3 class="mHead mHeadTwoLine">Advanced search</h3>
+                    </div>
+                    <!--==========================================search by phone name============================================-->
+                    <div class="sectionInner">
+                        <h4 class="sHead">Phone name</h4>
+                        <ul class="lNav list-unstyled">
+                            <li><a href="">Nokia 225</a></li>
+                            <li><a href="">Nokia 110</a></li>
+                            <li><a href="">Samsung B313E</a></li>
+                            <li><a href="">Samsung Yucca B360</a></li>
+                            <li><a href="">Samsung Galaxy J5</a></li>
+                            <li><a href="">Lumia 850</a></li>
+                            <li><a href="">LG G5</a></li>
+                            <li><a href="">Samsung Galaxy A5 2016</a></li>
+                            <li><a href="">Nokia C1</a></li>
+                            <li><a href="">LG G2</a></li>
+                        </ul>
+                    </div>
+                    <!--=====================================end search bu phone name=====================================================-->
+                    <!--=====================================search by Producer==============================================================-->
+                    <div class="sectionInner">
+                        <h4 class="sHead">Producer</h4>
+                        <ul class="lNav list-unstyled">
+                            <li><a href="">Nokia</a></li>
+                            <li><a href="">Samsung</a></li>
+                            <li><a href="">LG</a></li>
+                        </ul>
+                    </div>
+                    <!--======================================end search by Producer=====================================-->
+                    <!--=======================================search by Pricce===============================================-->
+                    <div class="sectionInner">
+                        <h4 class="sHead">Price</h4>
+                        <ul class="lNav list-unstyled">
+                            <li><a href="">$22.28 - $89.13</a></li>
+                            <li><a href="">$89.13 - $222.81</a></li>
+                            <li><a href="">$222.81 - $668.44 </a></li>
+                            <li><a href="">Over $668.44</a></li>
+                        </ul>
+                    </div>
+                    <!--========================================end search by Price=============================================-->
+                    <!--========================================advertising=====================================================-->
+                    <div class="advertising">
+                        <ul class="list-unstyled">
+                            <li>
+                                <img src="public/images/8-3-dt.gif">
+                            </li>
+                        </ul>
+                    </div>
+                    <!--========================================end advertising===================================================-->
+                    <!--=======================================end sidebar===================================================-->
+                </div>
+                
+
+            </div>
+            <div class="footer-container">
+                <div class="footer-top">
+                    <section id="footer-top">
+                        <div class="footer-main">
+                            <div class="row" style="margin-top:10px;">
+                                <span style="border-bottom:1px solid #CCC; margin-bottom:20px;margin-left:30px; display:inline-block;">@2016 N2PT.com All rights reserved<a style="color: black;" href=" "> phone</a>.</span>
+                                <p>Owner: 1364121 - 1364104. <br> MST individuals: 0934129895<br>Business registration number: 40N20080306 by people's committee A country of Tp.HCM on level: 30/05/2016.</p>
+                            </div>
+                            <div class="logo-DK">
+                                <img src="public/images/dk.png" width="150">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+</body>
 </html>

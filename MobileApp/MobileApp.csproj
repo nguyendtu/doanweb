@@ -85,6 +85,7 @@
     <Content Include="public\admin.html" />
     <Content Include="public\css\admin.css" />
     <Content Include="public\css\main.css" />
+    <Content Include="public\images\dk.png" />
     <Content Include="public\index.html" />
     <Content Include="public\javascript\admin.js" />
     <Content Include="public\javascript\app.js" />
@@ -130,9 +131,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="public\images\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
