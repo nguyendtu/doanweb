@@ -1,1 +1,36 @@
 ﻿<p>producer admin</p>
+<div>
+    <button>Add New Producer</button>
+    <div>
+        <form>
+            <input type="text" name="name" placeholder="Producer name" />
+            <button>Search</button>
+        </form>
+    </div>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Producer Code</th>
+            <th>Producer Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="phone in producers">
+            <td>{{ producer.code }}</td>
+            <td>{{ producer.name }}</td>
+            <td>{{ producer.phone }}</td>
+            <td>{{ producer.email }}</td>
+            <td>{{ producer.address }}</td>
+            <td>
+                <img width="30" src="/public/images/eye.png" alt="Alternate Text" />
+                <img width="30" src="/public/images/pencil.png" alt="Alternate Text" />
+                <img width="30" src="/public/images/trash.png" alt="Alternate Text" />
+            </td>
+        </tr>
+    </tbody>
+</table>

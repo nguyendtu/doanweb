@@ -1,34 +1,37 @@
 ﻿mobileApp.controller('ProducerController', ['$scope', '$stateParams', 'producerService', function ($scope, $stateParams, producerService) {
-    $scope.name = $stateParams.name;
-    console.log($stateParams.name);
+    $scope.type = $stateParams.type;
     //producerService.getProducerOfType().success(function (response) {
     //    $scope.phones = response;
     //});
     // get producer and show
-    $scope.phones = [
+    $scope.producers = [
       {
-          name: "IPHONE SE 16GB",
-          image: "/public/images/IPHONE_SE_16GB.jpg",
-          price: 11400900,
-          description: "Dien thoai iphone se 16GB"
+          code: "NSX001",
+          name: "Nhà Sản Xuất A",
+          phone: "0994818193",
+          email: "hnhungvt13@gmail.com",
+          address: "Thu Duc - Binh Thanh"
       },
       {
-          name: "IPHONE SE 16GB",
-          image: "/public/images/IPHONE_SE_16GB.jpg",
-          price: 11400900,
-          description: "Dien thoai iphone se 16GB"
+          code: "NSX001",
+          name: "Nhà Sản Xuất A",
+          phone: "0994818193",
+          email: "hnhungvt13@gmail.com",
+          address: "Thu Duc - Binh Thanh"
       },
       {
-          name: "IPHONE SE 16GB",
-          image: "/public/images/IPHONE_SE_16GB.jpg",
-          price: 11400900,
-          description: "Dien thoai iphone se 16GB"
+          code: "NSX001",
+          name: "Nhà Sản Xuất A",
+          phone: "0994818193",
+          email: "hnhungvt13@gmail.com",
+          address: "Thu Duc - Binh Thanh"
       },
       {
-          name: "IPHONE SE 16GB",
-          image: "/public/images/IPHONE_SE_16GB.jpg",
-          price: 11400900,
-          description: "Dien thoai iphone se 16GB"
+          code: "NSX001",
+          name: "Nhà Sản Xuất A",
+          phone: "0994818193",
+          email: "hnhungvt13@gmail.com",
+          address: "Thu Duc - Binh Thanh"
       }
     ];
 }]);
