@@ -1,0 +1,39 @@
+<div>
+    <button ng-click="addNewPhone()">Add New Phone</button>
+    <div>
+        <form>
+            <input type="text" name="name" placeholder="Phone name" ng-model="search" />
+            <button>Search</button>
+        </form>
+    </div>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Phone Name</th>
+            <th>Description</th>
+            <th>Made</th>
+            <th>Manufacturers</th>
+            <th>Price</th>
+            <th>Quatity</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="phone in phones | filter:search">
+            <td>{{ $index + 1 }}</td>
+            <td>{{ phone.name }}</td>
+            <td>{{ phone.description }}</td>
+            <td>{{ phone.made }}</td>
+            <td>{{ phone.manufacturers }}</td>
+            <td>{{ phone.price | currency }}</td>
+            <td>{{ phone.quatity }}</td>
+            <td>
+                <a ng-click="view(phone.id)"><img width="30" src="/public/images/eye.png" alt="Alternate Text" /></a>
+                <a ng-click="edit(phone.id)"><img width="30" src="/public/images/pencil.png" alt="Alternate Text" /></a>
+                <a ng-click="delete(phone.id)"><img width="30" src="/public/images/trash.png" alt="Alternate Text" /></a>
+            </td>
+        </tr>
+    </tbody>
+</table>

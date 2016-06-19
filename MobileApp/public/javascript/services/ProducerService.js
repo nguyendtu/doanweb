@@ -11,7 +11,16 @@
         });
     };
 
+    // get all producer.
+    var getProducer = function () {
+        return $http({
+            method: 'GET',
+            url: base
+        });
+    };
+
     return {
-        getProducerOfType: getProducerOfType
+        getProducerOfType: getProducerOfType,
+        getProducer: getProducer
     };
 }]);

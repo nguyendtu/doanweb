@@ -20,7 +20,7 @@
         scope: {
             phones: '='
         },
-        link: 'link',
+        link: link,
         controller: controller
     };
 });
