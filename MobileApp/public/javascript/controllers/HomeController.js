@@ -1,4 +1,4 @@
-﻿mobileApp.controller("HomeController", ['$scope', '$http', 'phoneService', function ($scope, $http, phoneService) {
+﻿mobileApp.controller("HomeController", ['$scope', '$state', '$http', 'phoneService', function ($scope, $state, $http, phoneService) {
 
     $scope.$broadcast("$stateChangeStart");
 
@@ -16,6 +16,10 @@
         
     //    console.log(response);
     //});
+
+    $scope.payment = function () {
+        $state.go('payment');
+    };
 
     $scope.phones = [
         {

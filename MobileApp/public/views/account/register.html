@@ -1,209 +1,41 @@
-﻿<!--<form>
-    <h1>Register</h1>
-    <div class="info-register">
-        <h4>Personal information</h4>
-        <div>
-            <label for="fullname">FullName</label>
-            <input type="text" placeholder="Full Name" id="fullname" />
-        </div>
-        <div>
-            <label for="birthday">Birthday</label>
-            <input type="date" placeholder="Birthday" id="birthday" />
-        </div>
-        <div>
-            <label for="address">Address</label>
-            <input type="text" placeholder="Address" id="address" />
-        </div>
+﻿<form name="registerForm" ng-submit="registerForm.$valid && register(user)" novalidate>
+    <h3>Register</h3>
+    <div>
+        <label for="fullname">FullName</label>
+        <input type="text" placeholder="Full Name" id="fullname" name="name" ng-model="user.name" required/>
+        <p ng-show="!registerForm.name.$pristine && registerForm.name.$invalid">Name is required</p>
     </div>
-   <div>
-       <h4>Account information</h4>
-       <div>
-           <label for="username">Username</label>
-           <input type="text" placeholder="Username" id="username" />
-       </div>
-       <div>
-           <label for="password">Password</label>
-           <input type="password" placeholder="Password" id="password" />
-       </div>
-       <div>
-           <label for="Retype_password">Retype Password</label>
-           <input type="password" placeholder="Retype_password" id="Retype_password" />
-       </div>
-   </div>
-    <button>Register</button>
-</form>-->
-<form action="" method="post" novalidate="novalidate" class="register">
-    <h3>Account Register </h3>
-    <div class="personal-info">
-        <b>Personal information </b>
-        <table class="tbpersonal">
-            <tr>
-                <td>
-                    <label for="FullName">Full Name</label>
-                </td>
-                <td>
-                    <input type="text" placeholder="Full Name">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="Birthday">Birthday</label>
-                </td>
-                <td>
-                    <select style="width:164px; height: 30px; margin-left: 20px;">
-                        <option value="day">[Day]</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="21">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                    </select>
-                    <select style="width:164px; height: 30px;">
-                        <option value="month">[Month]</option>
-                        <option value="th1">1</option>
-                        <option value="th2">2</option>
-                        <option value="th3">3</option>
-                        <option value="th4">4</option>
-                        <option value="th5">5</option>
-                        <option value="th6">6</option>
-                        <option value="th7">7</option>
-                        <option value="th8">8</option>
-                        <option value="th9">9</option>
-                        <option value="th10">10</option>
-                        <option value="th11">11</option>
-                        <option value="th12">12</option>
-                    </select>
-                    <select style="width:164px; height: 30px;">
-                        <option value="year">[Year]</option>
-                        <option value="1990">1990</option>
-                        <option value="1991">1991</option>
-                        <option value="1992">1992</option>
-                        <option value="1993">1993</option>
-                        <option value="1994">1994</option>
-                        <option value="1995">1995</option>
-                        <option value="1996">1996</option>
-                        <option value="1997">1997</option>
-                        <option value="1998">1998</option>
-                        <option value="1999">1999</option>
-                        <option value="2000">2000</option>
-                        <option value="2001">2001</option>
-                        <option value="2002">2002</option>
-                        <option value="2003">2003</option>
-                        <option value="2004">2004</option>
-                        <option value="2005">2005</option>
-                        <option value="2006">2006</option>
-                        <option value="2007">2007</option>
-                        <option value="2008">2008</option>
-                        <option value="2009">2009</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="Address">Address</label>
-                </td>
-                <td>
-                    <select style="width:500px; height: 30px; margin-left: 20px;">
-                        <option value="choose city">--------City---------</option>
-                        <option value="hochiminh">Hồ Chí Minh</option>
-                        <option value="1991">Vũng tàu</option>
-                        <option value="1992">Bình Thuận</option>
-                        <option value="1993">Nha Trang</option>
-                        <option value="1994">Hà Nội</option>
-                        <option value="1995">Đà Nẵng</option>
-                        <option value="1996">Đầ Lạt</option>
-                        <option value="1997">Sóc Trăng</option>
-                        <option value="1998">Tiền Giang</option>
-                        <option value="1999">Ninh Thuận</option>
-                        <option value="2000">Nghệ An</option>
-                        <option value="2001">Thanh Hoá</option>
-                        <option value="2002">Quảng Nam</option>
-                        <option value="2003">Thừa Thiên Huế</option>
-                    </select>
-                </td>
-            </tr>
-        </table>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" id="email" name="email" ng-model="user.email" required/>
+        <p ng-show="!registerForm.email.$pristine && registerForm.email.$invalid">Email is required</p>
     </div>
-    <div class="personal-info">
-        <b>Account information </b>
-        <table class="tbpersonal1">
-            <tr>
-                <td>
-                    <label for="UserNameReg">Username</label>
-                </td>
-                <td>
-                    <span>*</span>
-                </td>
-                <td>
-                    <input type="text" placeholder="Username">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="Password">Password</label>
-                </td>
-                <td>
-                    <span>*</span>
-                </td>
-                <td>
-                    <input id="user_password" type="password" size="30" placeholder="Enter the password">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="ConfirmPassword">Retype-password</label>
-                </td>
-                <td>
-                    <span>*</span>
-                </td>
-                <td>
-                    <input placeholder="Enter the retype-password">
-                </td>
-            </tr>
-        </table>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" name="password" ng-model="user.password" required/>
+        <p ng-show="!registerForm.password.$pristine && registerForm.password.$invalid">Password is required</p>
     </div>
-    <div class="personal-info">
-        <b>Test code</b>
-        <table class="tbpersonal2">
-            <tr>
-                <td>
-                    <label for="Scode">Enter code</label>
-                </td>
-                <td>
-                    <span>*</span>
-                </td>
-                <td>
-                    <input type="text" placeholder="Enter the test code">
-                </td>
-            </tr>
-        </table>
+    <div>
+        <label for="retype-password">Retype Password</label>
+        <input type="password" name="rPassword" placeholder="Retype password" id="rPassword" ng-model="userCheck.password" ng-match="user.password" required/>
+        <p ng-show="!registerForm.rPassword.$pristine && registerForm.rPassword.$invalid">Keyword not match</p>
     </div>
-    <div class="butn">
-        <button>Register</button>
+    <div>
+        <label for="address">Address</label>
+        <input type="text" placeholder="Address" id="address" name="address" ng-model="user.address" required/>
+        <p ng-show="!registerForm.address.$pristine && registerForm.address.$invalid">Address is required</p>
     </div>
+    <div>
+        <label for="phone">Phone</label>
+        <input type="text" placeholder="Phone" id="phone" name="phone" ng-model="user.phone" required/>
+        <p ng-show="!registerForm.phone.$pristine && registerForm.phone.$invalid">Phone is required</p>
+    </div>
+    <div>
+        <label for="captcha">Captcha</label>
+        <p id="detail-captcha" style="padding: 10px;background: blue;color: #fff;display: inline-block;">{{ captcha }}</p>
+        <input type="text" name="captcha" placeholder="Type captcha" id="captcha" ng-model="userCheck.captcha" ng-blur="prepareCaptcha()" required/>
+        <p ng-show="!registerForm.captcha.$pristine && registerForm.captcha.$invalid">Captcha not match</p>
+    </div>
+    <button ng-if="disable" disabled="disabled">Register</button>
+    <button ng-if="!disable">Register</button>
 </form>

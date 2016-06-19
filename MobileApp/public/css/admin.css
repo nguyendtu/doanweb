@@ -1,4 +1,9 @@
-﻿body {
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
@@ -159,4 +164,32 @@ tr:hover {
 th {
     background-color: #4caf50;
     color: #fff;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+}
+input:focus {
+    border: 1px solid red;
+}
+.form-inline .form-control {
+    width: calc(100% - 200px);
+}
+.label-control {
+    display: inline-block;
+    text-align: right;
+    width: 150px;
+}
+.form-control {
+    width: 100%;
+}
+
+.btn {
+    padding: 6px;
+}
+.btn-default {
+    background-color: #fff;
+    border: 1px solid #1a1a1a;
+    color: #1a1a1a;
 }

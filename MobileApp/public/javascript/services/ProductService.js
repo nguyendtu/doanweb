@@ -1,5 +1,5 @@
 ﻿mobileApp.factory("phoneService", ['$http', function ($http) {
-    var base = 'api/phone';
+    var base = '/api/phone';
 
     // get lasted phone.
     var getLastedPhone = function(){
@@ -34,6 +34,15 @@
         });
     };
     
+    // get phone of producer.
+    var getPhoneOfProducer = function (producer) {
+        var url = base + '/' + producer;
+        return $http({
+            method: 'GET',
+            url: url
+        })
+    };
+
     // get all phone.
     var getPhones = function () {
         return $http({
@@ -52,6 +61,16 @@
         });
     };
 
+    // get phone id.
+    var getPhonesOfId = function (id) {
+        var url = base + '/' + id;
+
+        return $http({
+            method: 'GET',
+            url: url
+        });
+    }
+
     // save new phone.
     var addNewPhone = function (data) {
         return $http({
@@ -64,12 +83,37 @@
         })
     };
 
+    // edit phone.
+    var editPhone = function (phone) {
+        var url = base + '/' + phone.id;
+        return $http({
+            method: 'PUT',
+            url: url,
+            headers: {
+                'content-type': 'application/json'
+            },
+            data: JSON.stringify(phone)
+        });
+    }
+
+    // delete phone.
+    var deletePhone = function (id) {
+        var url = base + '/' + id;
+        
+        return $http({
+            method: 'DELETE',
+            url: url
+        });
+    }
+
     return {
         getPhones: getPhones,
         getLastedPhone: getLastedPhone,
         getBestSellingPhone: getBestSellingPhone,
         getBestOrderingPhone: getBestOrderingPhone,
         addNewPhone: addNewPhone,
-        getPhonesOfType: getPhonesOfType
+        getPhonesOfType: getPhonesOfType,
+        editPhone: editPhone,
+        deletePhone: deletePhone
     };
 }]);

@@ -1,0 +1,27 @@
+﻿<form ng-submit="phone.id != 0 ? handleUpdatePhone(phone) : handleAddPhone(phone)" novalidate>
+    <div class="form-group">
+		<label for="name">Name</label>
+		<input type="text" id="name" placeholder="Phone name" ng-model="phone.name" class="form-control">
+    </div>
+    <div class="form-group">
+		<label for="description">Description</label>
+		<input type="text" id="description" placeholder="Phone description" ng-model="phone.description" class="form-control">
+    </div>
+    <div class="form-group">
+		<label for="made">Made</label>
+		<input type="text" id="made" placeholder="made" ng-model="phone.made" class="form-control">
+    </div>
+    <div class="form-group">
+		<label for="manufacturer">Manufacturer</label>
+		<input type="text" id="manufacturer" placeholder="manufacturer" ng-model="phone.manufacture" class="form-control">
+    </div>
+    <div class="form-group">
+		<label for="price">Price</label>
+		<input type="text" id="price" placeholder="Price" ng-model="phone.price" class="form-control">
+    </div>
+    <div class="form-group">
+		<label for="quatity">Quatity</label>
+		<input type="text" id="quatity" placeholder="Quatity" ng-model="phone.quantity" class="form-control">
+    </div>
+    <button class="btn btn-default">{{ phone.id != 0 ? "Update phone" : "Create phone" }}</button>
+</form>

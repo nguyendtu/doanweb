@@ -16,7 +16,7 @@
 
     return {
         restrict: 'E',
-        templateUrl: '/public/views/phone/phone.html',
+        templateUrl: '/public/views/main/phone/phone.html',
         scope: {
             phones: '='
         },
