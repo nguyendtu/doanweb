@@ -1,0 +1,45 @@
+<form class="user-profile">
+    <h3>Information contact</h3>
+    <div class="form-group">
+        <label for="name">Full Name*</label>
+        <input type="text" id="name" name="name" class="form-control" placeholder="Full Name">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" class="form-control" placeholder="not required">
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone number*</label>
+        <input type="text" id="phone" name="phone" class="form-control" placeholder="Phone number">
+    </div>
+    <h3>Delivery address</h3>
+    <div class="form-group">
+        <label for="city">Selected provinces *</label>
+        <select name="city" id="city" class="form-control">
+            <option value="">---Selected provinces ---</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="district">Selected provinces *</label>
+        <select name="district" id="district" class="form-control">
+            <option value="">You have not selected provinces</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="wards">Selected provinces *</label>
+        <input type="text" name="wards" id="wards" class="form-control" placeholder="Selected provinces">
+    </div>
+    <div class="form-group">
+        <label for="home-address">House number, street name*</label>
+        <input type="text" name="home-address" id="home-address" class="form-control" pattern="Enter the house number, street name">
+    </div>
+    <div class="form-group">
+        <label for="note">Note</label>
+        <textarea name="note" id="note" cols="30" rows="5" class="form-control" placeholder="Enter note"></textarea>
+    </div>
+    <div class="form-group">
+        <button class="btn">
+            <a href="#">Send</a>
+        </button>
+    </div>
+</form>	

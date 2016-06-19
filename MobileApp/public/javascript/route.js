@@ -46,6 +46,17 @@
             controller: 'RegisterController'
         })
 
+        .state('shopping-cart', {
+            url: '/shopping-cart',
+            templateUrl: '/public/views/main/shopping-cart/index.html'
+            // controller: 'RegisterController'
+        })
+
+        .state('payment', {
+            url: '/payment',
+            templateUrl: '/public/views/main/payment/index.html'
+        })
+
         .state('admin', {
             url: '/admin',
             templateUrl: '/public/views/admin/index.html',
